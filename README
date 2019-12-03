@@ -1,0 +1,88 @@
+
+Test Results
+
+Test: Multiply
+Input: ? 1/2 * 3_3/4
+Expected: = 1_7/8
+Actual result: = 1_7/8
+Test case passed
+
+Test: Add
+Input: ? 2_3/8 + 9/8
+Expected: = 3_1/2
+Actual result: = 3_1/2
+Test case passed
+
+Test: Subtract
+Input: ? 2_3/8 - 9/8
+Expected: = 1_1/4
+Actual result: = 1_1/4
+Test case passed
+
+Test: Divide
+Input: ? 2_4/8 / 7/14
+Expected: = 5
+Actual result: = 5
+Test case passed
+
+Test: Priority
+Input: ? 27/9 + 6/12 * 4/2 + 25/50
+Expected: = 4_1/2
+Actual result: = 4_1/2
+Test case passed
+
+Test: Signed
+Input: ? 2_-3/-8 + 9/8
+Expected: = 3_1/2
+Actual result: = 3_1/2
+Test case passed
+
+Test: Signed 2
+Input: ? 2_3/8 + 9/-8
+Expected: = 1_1/4
+Actual result: = 1_1/4
+Test case passed
+
+Test: No Question
+Input: e 2_4/8 / 7/14
+Expected: Error: No question mark
+Actual result: Error: No question mark
+Test case passed
+
+Test: No Argument
+Input: ?
+Expected: Error: Not enough arguments
+Actual result: Error: Not enough arguments
+Test case passed
+
+Test: Multiple underscores
+Input: ? 27/9 + 2_6/12_3/11 * 4/2 + 25/50
+Expected: Error: Multiple underscores in single operand in argument 4
+Actual result: Error: Multiple underscores in single operand in argument 4
+Test case passed
+
+Test: Multiple fractions
+Input: ? 27/9/3 + 2_6/12_3/11 * 4/2 + 25/50
+Expected: Error: Multiple fractions in single operand in argument 2
+Actual result: Error: Multiple fractions in single operand in argument 2
+Test case passed
+
+Test: Invalid operation
+Input: ? 27/9 + 2_6/12 % 4/2 + 25/50
+Expected: Error: Invalid operation in argument 5
+Actual result: Error: Invalid operation in argument 5
+Test case passed
+
+Test: Invalid Number
+Input: ? 27/9 + 2_6/12.5 / 4/2 + 25/50
+Expected: Error: Invalid number in argument 4
+Actual result: Error: Invalid number in argument 4
+Test case passed
+
+Test: Invalid Number
+Input: ? 27/9 + 2_6-12 / 4/2 + 25/50
+Expected: Error: Invalid number in argument 4
+Actual result: Error: Invalid number in argument 4
+Test case passed
+
+Executed: 14, Passed: 14, Failed: 0
